@@ -17,3 +17,9 @@ Install the following python packages:
 3. ! pip install --user --install-option="--install-purelib=/usr/lib64/python2.7/dist-packages" 'tables==2.4'
 
 Please not that the getters for the h5 files need particular versions of the packages mentioned above which is why it's needed to force install them.
+
+## Creating the dataset
+The files used for constructing the dataset are present in the folder 'Dataset creation'. It contains the python files with the getter functions along with our custom wrappers that invoke those getters. In order to circumvent RAM issues, we processed the requests as batch events by using the shell script to invoke the wrappers. 
+
+## Year and genre predictions
+The predictive analysis part is present in the 'Analysis' folder of this repository. It includes code to visualize the data, feature selection and constructing and running the predctive models.
